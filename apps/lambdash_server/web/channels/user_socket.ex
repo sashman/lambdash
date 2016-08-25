@@ -2,7 +2,7 @@ defmodule LambdashServer.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "rooms:*", LambdashServer.RoomChannel
+  channel "data:*", LambdashServer.DataChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
